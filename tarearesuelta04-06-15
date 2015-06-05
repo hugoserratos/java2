@@ -1,0 +1,36 @@
+
+    private void BotonEscritoActionPerformed(java.awt.event.ActionEvent evt) {                                             
+
+        String text=textFieldTexto.getText();
+
+ byte []algo= text.getBytes();
+StringBuilder builder=new StringBuilder();
+for (byte valor: algo){
+    builder.append((char)valor);
+    
+}
+EtiquetaEscrito.setText(builder.toString());
+
+
+
+
+
+
+    }                                            
+
+    private void BotonAscciActionPerformed(java.awt.event.ActionEvent evt) {                                           
+     
+         String algos=new String(textFieldTexto.getText());
+        
+        byte []xx=algos.getBytes();
+        StringBuilder builder=new StringBuilder();
+        
+            for(byte mm: xx){
+                builder.append(mm);
+            }
+              EtiquetaAsccii.setText(builder.toString());
+        
+    }                                          
+    
+    
+    
