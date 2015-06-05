@@ -1,0 +1,28 @@
+        
+ String algo=new String(textFieldTexto.getText());
+        algo.getBytes();
+        
+               
+       
+       EtiquetaEscrito.setText(algo); 
+
+
+
+
+
+
+    }                                            
+
+    private void BotonAscciActionPerformed(java.awt.event.ActionEvent evt) {                                           
+     
+         String algos=new String(textFieldTexto.getText());
+        
+     
+
+        byte []xx=algos.getBytes();
+            for(byte mm:xx)
+               EtiquetaAsccii.setText(""+mm);
+       
+       
+       
+       
