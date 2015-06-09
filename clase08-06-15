@@ -1,0 +1,46 @@
+
+package herencia;
+
+
+public abstract class Animal {
+    private String nombre;
+     private int edad;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    
+    
+}
+
+package herencia;
+
+
+public class Chapultepec {
+
+  
+    public static void main(String[] args) {
+        
+       //Animal ya es una clase abstracta, no se puede heredar de ella y tambièn crear objetos a partir de ella
+      // Animal raro=new Animal();
+             // raro.setEdad(2);
+              //raro.setNombre("rareza");
+       Tortuga animal1=new Tortuga();
+              animal1.setNombre("Japonesa");
+              animal1.setEdad(12);
+       Leon animal2=new Leon();
+              animal2.setNombre("Africano");
+              animal2.setEdad (20);
+              
