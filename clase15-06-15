@@ -1,0 +1,43 @@
+package uncheckedexception;
+
+
+public class ProbarExcepciones {
+
+  
+    public static void main(String[] args) {
+        float a=5;
+        int b=0;
+        System.out.println(a*b);
+        System.out.println(a/b);
+        System.out.println(a-b);
+        
+        //Integer i=new Integer ("hola");
+        int otro=5;
+        //System.out.println(i+otro);
+        int []m={2,5,6,7};
+        System.out.println(m[2]);
+      
+    }
+    
+}
+package checkedexceptions;
+
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ProbarChecked {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws Exception {
+      File f=new File("archivaldo");
+       
+            FileOutputStream fos=new FileOutputStream(f);
+            ObjectOutputStream oos=new ObjectOutputStream(fos);
+            
+            
+      
+}
+}
