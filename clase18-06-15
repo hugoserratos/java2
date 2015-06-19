@@ -1,0 +1,33 @@
+    package miprimeraexcepcion;
+
+
+public class FormularioEdad extends javax.swing.JFrame {
+
+   
+    public FormularioEdad() {
+        initComponents();
+        setTitle("Mis excepciones");
+        javax.swing.JFrame.setDefaultLookAndFeelDecorated(true);
+        setLocationRelativeTo(this);
+        
+    }
+    
+    
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      
+        try {
+             int edad=Integer.parseInt(jTextField1.getText());
+         System.out.println("Vamos a validar tu edad");
+            
+            ValidarEdad.validar(edad);
+            jLabel1.setText("Eres mayor de edad bienvenido a brazzers");
+            
+        } catch (MenordeEdadexception ex) {
+            jLabel1.setText(ex.getMessage());
+            
+            
+        }catch(NumberFormatException ex){
+            jLabel1.setText("Metiste letras y no numeros");
+            
+        }
+        
