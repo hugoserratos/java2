@@ -1,0 +1,23 @@
+package collections;
+
+import java.util.List;
+
+public class GeneradorDeUsuarios {
+    
+    private List<Usuario> usuario;
+    public GeneradorDeUsuarios(){
+    Usuario u1=new Usuario("Hugo",22,"hgo.serratos@gmail.com");
+    Usuario u2=new Usuario("Ana",22,"ana@gmail.com");
+    Usuario u3=new Usuario("pedro",50,"ped50@gmail.com");
+    
+
+    
+    }
+public List<Usuario> getUsuario() {
+        return usuario;
+}   
+    public void setUsuario(List<Usuario> usuario) {
+        this.usuario = usuario;
+    }
+    
+}
